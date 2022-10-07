@@ -1,0 +1,28 @@
+<div class="login-form-container">
+    <form class="login-form">
+        <div class="login-form-content">
+            <img class="login-form-banner" src="assets/login-banner.png" alt="login-banner"/>
+            <div class="login-form-body">
+                <span class="text-danger login-form-error">{{ err }}</span>
+                <div class="login-form-body-content">
+                    <div class="login-form-body_left">
+                        <label class="login-form-label" for="username">Login :</label>
+                        <label class="login-form-label" for="password">Password :</label>
+                    </div>
+                    <div class="login-form-body_right">
+                        <input type="text" id="username" class="login-form-input" ng-model="username" required/>
+                        <input type="password" id="password" class="login-form-input" ng-model="password" required/>
+                        <div class="login-form-remember-me">
+                            <input id="remember" type="checkbox">
+                            <label class="login-form-label" for="remember"> Remember me</label>
+                            <div class="login-form-submit">
+                                <button class="btn submit-btn" ng-click="clickMe()">Log In »</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="login-form-text">Forgotten your password ? <strong> Request a new one.</strong></p>
+    </form>
+</div>
