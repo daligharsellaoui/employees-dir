@@ -11,6 +11,9 @@ angular.
         when('/home', {
           template: '<people-directory></people-directory>'
         }).
+        when('/under-construction' ,{
+          template:'<under-construction></under-construction>'
+      }).
         otherwise('/login');
     }
   ]);

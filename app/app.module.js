@@ -4,4 +4,6 @@
 angular.module('EmployeeDirectory', [
     'ngRoute',
     'login',
-    'peopleDirectory']);
+    'peopleDirectory',
+    'underConstruction',
+    'ui.bootstrap']);
