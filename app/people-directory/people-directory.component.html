@@ -1,0 +1,65 @@
+<nav class="top-navbar">
+    <div class="top-navbar-logo">
+        <img src="assets/logo.png" alt="logo"/>
+    </div>
+    <div class="top-navbar-welcome-user">
+        <p>Welcome {{user}}</p>
+        <a class="top-navbar-logout" href="/#!/login">Logout</a>
+    </div>
+</nav>
+<div class="top-navbar-menu">
+    <ul class="top-navbar-menu-items">
+        <li class="top-navbar-menu-item"><a href="/#!/under-construction" style="color: white">Demo's home</a></li>
+        <li class="top-navbar-menu-item selected">People's directory</li>
+        <li class="top-navbar-menu-item"><a href="/#!/under-construction" style="color: white">Jobs manager</a></li>
+        <li class="top-navbar-menu-item"><a href="/#!/under-construction" style="color: white">Statistics</a></li>
+    </ul>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="companies">
+                <h4>Companies</h4>
+                <label>
+                    <input type="text" class="login-form-input" ng-model="companyQuery"
+                           placeholder="Search a company..."/>
+                </label>
+                <div class="companies-list">
+                    <span class="companies-list-item" ng-repeat="item in companies | filter:companyQuery"
+                          ng-click="showDep(item.id)">{{item.company}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="companies">
+                <h4>Departments</h4>
+                <label>
+                    <input type="text" class="login-form-input" ng-model="depQuery"
+                           placeholder="Search a department..."/>
+                </label>
+                    <div class="companies-list">
+                        <span class="companies-list-item" ng-repeat="item in departments | filter:depQuery"
+                              ng-click="showEmp(item.id)">{{item.department}}</span>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="companies">
+                <h4>Employees</h4>
+                <label style="display: flex;align-items:center ">
+                    <input type="text" class="login-form-input" ng-model="empQuery"
+                           placeholder="Search an employee..."/>
+                    <button type="button" class="btn btn-primary" ng-disabled="!employees" data-toggle="modal" ng-click="addEmpModal()">New</button>
+                </label>
+                    <div class="companies-list">
+                        <span class="companies-list-item" ng-click="selectEmp(item)"
+                              ng-repeat="item in employees | filter: empQuery" >{{item.name}}</span>
+                    </div>
+                </div>
+            <button type="button" class="btn btn-danger delete" ng-disabled="!selectedEmp" ng-click="deleteModal()">Remove</button>
+        </div>
+    </div>
+</div>
+
+

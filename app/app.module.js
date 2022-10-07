@@ -1,4 +1,6 @@
 'use strict';
 
 // Define the `EmployeeDirectory` module
-angular.module('EmployeeDirectory', ['login']);
+angular.module('EmployeeDirectory', [
+    'login',
+    'peopleDirectory']);
