@@ -82,3 +82,71 @@ ul {
     background-color: #f6f6f6;
 
 }
+.top-navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    background-image: url("assets/banner.png");
+    background-size: cover;
+}
+.top-navbar-logo{
+    margin-top: 20px;
+}
+.top-navbar-welcome-user{
+    margin-right: 20px;
+    text-align: right;
+    line-height: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.top-navbar-logout{
+    color: #fff;
+    font-weight: 700;
+}
+
+.top-navbar-menu{
+    background: #5e8f1e;
+}
+.top-navbar-menu-items{
+    display: flex;
+}
+.top-navbar-menu-item{
+    color: #fff;
+    background: #7eaf22;
+    padding: 10px 20px;
+    /*box-shadow: inset 6px 8px 6px -6px #555;*/
+    border-right: 1px solid #ccc;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.selected {
+    background: #3d6e00;
+}
+
+.companies{
+    background: #f7f7f7;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.companies-list{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #cccccc;
+    height: 51vh;
+    overflow-y: auto ;
+    margin-bottom: 10px;
+}
+.companies-list-item{
+    background: #fff;
+    padding: 5px;
+    border-bottom: solid 1px #cccccc;
+    line-height: 25px;
+    cursor: pointer;
+}
+.companies-list-item:hover{
+    background: #cccccc;
+}
