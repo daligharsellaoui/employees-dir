@@ -1,0 +1,95 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Add Employee</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <span class="text-danger login-form-error">{{ err }}</span>
+    <form class="row">
+        <div class="col-md-6">
+            <p>Personnal informations</p>
+            <div class="form-group">
+                <label for="name" class="col-md-4 control-label">Name<span style="color: red">*</span></label>
+                <div class="col-md-8">
+                    <input type="text" id="name" ng-model="fullName" class="form-control" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-md-4 control-label">Email</label>
+                <div class="col-md-8">
+                    <input type="text" id="email" ng-model="email" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-md-4 control-label">Phone</label>
+                <div class="col-md-8">
+                    <input type="number" id="phone" ng-model="phone" value="" class="form-control"  />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cellphone" class="col-md-4 control-label">Cellphone</label>
+                <div class="col-md-8">
+                    <input type="text" id="cellphone" ng-model="cellphone" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="loc" class="col-md-4 control-label">Location</label>
+                <div class="col-md-8">
+                    <input type="text" id="loc" ng-model="loc" value="" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-md-6">
+            <p>Professional informations</p>
+            <div class="form-group">
+                <label for="title" class="col-md-4 control-label">Title</label>
+                <div class="col-md-8">
+                    <input type="text" id="title"  ng-model="title" value="" class="form-control"  />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="company" class="col-md-4 control-label">Company<span style="color: red">*</span></label>
+                <div class="col-md-8">
+                    <select name="company" id="company" ng-model="company" class="form-control" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="department" class="col-md-4 control-label">Department<span style="color: red">*</span></label>
+                <div class="col-md-8">
+                    <select name="department" id="department" ng-model="department" class="form-control">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="startDate" class="col-md-4 control-label">Start Date</label>
+                <div class="col-md-8">
+                    <input type="date" id="startDate" ng-model="startDate" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="endDate" class="col-md-4 control-label">End Date</label>
+                <div class="col-md-8">
+                    <input type="date" id="endDate" ng-model="endDate" value="" class="form-control" />
+                </div>
+            </div>
+        </div> -->
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="save()">Ok</button>
+    <button class="btn btn-warning" type="button" ng-click="cancelModal()">Cancel</button>
+</div>
