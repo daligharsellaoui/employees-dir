@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "company_id": "1",
+    "department": "R&D"
+  },
+  {
+    "id": "2",
+    "company_id": "1",
+    "department": "QA"
+  },
+  {
+    "id": "3",
+    "company_id": "1",
+    "department": "UX/UI"
+  },
+  {
+    "id": "4",
+    "company_id": "2",
+    "department": "SAV"
+},
+  {
+    "id": "5",
+    "company_id": "2",
+    "department": "DEV"
+  },
+  {
+    "id": "6",
+    "company_id": "2",
+    "department": "Test"
+  },
+  {
+    "id": "7",
+    "company_id": "3",
+    "department": "IT"
+  },
+  {
+    "id": "8",
+    "company_id": "3",
+    "department": "Sales"
+  }
+]
